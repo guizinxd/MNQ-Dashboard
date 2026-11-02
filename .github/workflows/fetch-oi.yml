@@ -4,7 +4,7 @@ on:
   schedule:
     # Roda 00:30 UTC = 18:30 CT (CME publica OI preliminar ~18:00 CT)
     # E 13:00 UTC = 07:00 CT (atualiza antes do mercado abrir)
-    - cron: '30 0 * * 2-7'   # Ter-Sab (dados de Seg-Sex)
+    - cron: '30 0 * * 1-6'   # Ter-Sab (dados de Seg-Sex)
     - cron: '0 13 * * 1-5'   # Seg-Sex manhã
   workflow_dispatch:           # Permite rodar manualmente
 
